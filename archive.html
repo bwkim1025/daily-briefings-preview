@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>[시험판] 지난 호 · 땡이네 뉴스</title>
+  <script>
+    const home=new URL('./',location.href);
+    const date=location.hash.slice(1)||new URL(location.href).searchParams.get('date');
+    if(/^\d{4}-\d{2}-\d{2}$/.test(date||''))home.searchParams.set('date',date);
+    else home.hash='archive';
+    location.replace(home.href);
+  </script>
+</head>
+<body>
+  <div class="preview-banner" role="note" style="position:sticky;top:0;z-index:9999;background:#7a1f1f;color:#fff;font:600 13px/1.45 system-ui,sans-serif;padding:8px 14px;text-align:center">시험판 · 2026년 11월 1~24일을 새 방식(분야당 가장 중요한 1건 + 중요도 점수)으로 다시 쓴 평가용 사본입니다. 실제 앱이 아니며 음성은 없습니다. <a href="https://bwkim1025.github.io/daily-briefings-preview/about.html" style="color:#ffe9a8">선정 기준 보기</a></div><a href="./#archive">지난 호 달력 열기</a></body>
+</html>
